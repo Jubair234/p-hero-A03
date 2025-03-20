@@ -4,8 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 03</title>
+     <!-- BoxIcons links -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- manrope font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
+        <!-- Tailwind and DaisyUI CDN Link  -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    body{
+        font-family: "Manrope", sans-serif;
+    }
+  </style>      
+        
 </head>
 <body>
+
+    <header class="mb-20">
+        <div class="navbar w-11/12 lg:w-10/12 mx-auto bg-base-50 ">
+            <div class="navbar-start">
+              
+              <!-- logo-header  -->
+              
+              <a class="text-xl bg-[#ABEF5F] w-8 h-8 flex items-center justify-center rounded-full"><i class='bx bx-arrow-back -rotate-230'></i></a><span class=" text-2xl font-bold ml-2">Rinterio</span>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 font-semibold">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- dorpdown section  -->
+            
+            <div class="navbar-end flex items-center">
+              <div class="lg:block hidden">
+              <div class="flex items-center space-x-7 ">
+                <a href="#"> <i class='bx bx-search text-xl'></i></a>
+                <a href="#"> <i class='bx bx-cart text-xl'></i></a>
+               
+                
+                
+                <button class="btn rounded-full border-[#ABEF5F] bg-[#ABEF5F] text-black font-bold">Book Consult <span class="bg-black w-5 h-5 flex items-center justify-center rounded-full"><i class='bx bx-arrow-back -rotate-230 text-white'></i></span></button>
+              </div>
+            </div>
+              
+              <div class="dropdown dropdown-center">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-60 p-2 ml-[mt-3] shadow overflow-hidden">
+                <li><a class="font-semibold" href="#">Home</a></li>
+                <li><a class="font-semibold" href="#">Services</a></li>
+                <li><a class="font-semibold" href="#">Portfolio</a></li>
+                <li><a class="font-semibold" href="#">Blogs</a></li>
+                <li><a class="font-semibold" href="#">Contact us</a></li>
+                <div class="pt-2 flex flex-col items-center justify-start space-y-2">
+                  <div class="flex w-full ml-5 items-center space-x-6">
+                    <a href="#"><i class='bx bx-search text-lg '></i></a>
+                    <a href="#"><i class='bx bx-cart text-lg'></i></a>
+                    
+                    
+                  </div>
+                
+    
+                  <button class="btn w-auto rounded-full border-[#ABEF5F] bg-[#ABEF5F] text-black -ml-16">Book Consult <span class="bg-black w-5 h-5 flex items-center justify-center rounded-full"><i class='bx bx-arrow-back -rotate-230 text-white'></i></span></button>
+                </div>
+                </ul>
+
+                
+              </div>
+            </div>
+          </div>
+
+
+    <!-- Banner area starts        -->
+
+          <section class=" w-11/12 lg:w-10/12 mx-auto banner"> 
+
+            <div class="text-center mx-auto">
+
+              <img src="assets/banner.png" class="mx-auto" alt="">
+
+            
+
+            <div class="mt-5 lg:px-10 space-y-5">
+              <h2 class="lg:text-6xl font-bold text-4xl  mb-5">A barn house of this design has a striking appearance</h2>
+              <p class="lg:px-28">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+              <button class="btn w-full lg:w-auto rounded-full border-[#ABEF5F] bg-[#acef5f90] text-black font-bold">View Details <span class="bg-[#ABEF5F] w-5 h-5 flex items-center justify-center rounded-full"><i class='bx bx-arrow-back -rotate-230 text-black'></i></span></button>
+
+            </div>
+
+
+          </div>
+           
+            
+
+          </section>
+
+    </header>
+
+
+
+    <main>
+      
+      <section class="mb-20">
+        <img  class="hidden lg:block ml-20" src="assets/Vector.png" alt="">
+        <div class="w-11/12 lg:w-10/12 pt-5 mx-auto ">
+          
+          <!-- flex div  -->
+          <div class="flex items-center justify-between flex-col lg:flex-row">
+            
+          <!-- text-contents  -->
+          <div class=" flex-1 space-y-5">
+            <a href="" class="lg:text-left text-center block mx-auto text-lg font-semibold"><i class='bx bx-arrow-back rotate-180 text-lg font-semibold'></i> About us</a>
+            <h2 class="lg:text-5xl text-3xl lg:text-left text-center mt-5 font-bold">We design thoughtful, liveable spaces</h2>
+            <p class="lg:text-left text-center">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+              <div class="flex p-5">
+                <img src="assets/commercial.png" class=" object-contain" alt="">
+                <div class="p-5">
+                  <h3 class="text-xl font-semibold">Commercial</h3>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+
+              </div>
+              <div class="flex p-5">
+                <img src="assets/residential.png" class="object-contain" alt="">
+                <div class="p-5">
+                  <h3 class="text-xl font-semibold">Residential</h3>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+
+              </div>
+          </div>
+
+          <!-- image  -->
+          <div class="flex-1">
+            <img src="/assets/Rectangle.png" class=" lg:object-contain" alt="">
+          </div>
+        </div>
+        </div>
+
+      </section>
+    </main>
     
 </body>
 </html>
